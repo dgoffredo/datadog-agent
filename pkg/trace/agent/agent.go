@@ -144,7 +144,7 @@ func (a *Agent) Run() {
 	a.loop()
 }
 
-// FlushSync flushes traces sychronously. This method only works when the agent is configured in synchronous flushing
+// FlushSync flushes traces synchronously. This method only works when the agent is configured in synchronous flushing
 // mode via the apm_config.sync_flush option.
 func (a *Agent) FlushSync() {
 	if !a.conf.SynchronousFlushing {
